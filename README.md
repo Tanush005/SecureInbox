@@ -57,4 +57,6 @@ In the digital age, spam communication isn't just an annoyance—it's a security
    Stylish and intuitive result cards show if the input is spam or ham.
 
 ---
+🔒 Privacy Notice
+All processing is done locally. No chat data is sent to any server. Your conversations remain 100% private and secure.
 
