@@ -5,8 +5,6 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 import base64
-
-import nltk
 import os
 import ssl
 
@@ -26,9 +24,16 @@ nltk.data.path.append(nltk_data_path)
 ps = PorterStemmer()
 
 
+# def transform_text(text):
+#     text = text.lower()
+#     text = nltk.word_tokenize(text)
+from nltk.tokenize import RegexpTokenizer
+
+tokenizer = RegexpTokenizer(r'\w+')
+
 def transform_text(text):
     text = text.lower()
-    text = nltk.word_tokenize(text)
+    text = tokenizer.tokenize(text)
     y = [i for i in text if i.isalnum()]
     y = [ps.stem(i) for i in y if i not in stopwords.words('english') and i not in string.punctuation]
     return " ".join(y)
