@@ -199,7 +199,7 @@ if st.button("Predict"):
         st.markdown('<div class="result-spam">🚫 This is SPAM</div>', unsafe_allow_html=True)
     else:
         st.markdown('<div class="result-ham">✅ This is NOT Spam</div>', unsafe_allow_html=True)
-
+    st.write(f"Prediction took {end - start:.2f} seconds.")
 
 
 # import streamlit as st
