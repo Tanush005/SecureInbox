@@ -175,7 +175,10 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 input_sms = st.text_area("Paste your message here to check if it's spam:")
-
+# if st.button("Predict"):
+#     transformed_sms = transform_text(input_sms)
+#     vector_input = tfidf.transform([transformed_sms])
+#     result = model.predict(vector_input)[0]
 import time
 
 if st.button("Predict"):
@@ -190,9 +193,7 @@ if st.button("Predict"):
 
     end = time.time()
 
-    # Output
-    st.write("📩 Prediction:", "🛑 Spam" if result[0] == 1 else "✅ Not Spam")
-    st.success(f"⏱ Inference Time: {round((end - start) * 1000, 2)} ms")
+
 
     if result == 1:
         st.markdown('<div class="result-spam">🚫 This is SPAM</div>', unsafe_allow_html=True)
