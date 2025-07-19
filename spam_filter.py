@@ -6,8 +6,22 @@ from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 import base64
 
-nltk.download('stopwords')
-nltk.download('punkt')
+import nltk
+import os
+import ssl
+
+try:
+    _create_unverified_https_context = ssl._create_unverified_context
+except AttributeError:
+    pass
+else:
+    ssl._create_default_https_context = _create_unverified_https_context
+
+nltk_data_path = os.path.join(os.getcwd(), "nltk_data")
+nltk.download('punkt', download_dir=nltk_data_path)
+nltk.download('stopwords', download_dir=nltk_data_path)
+
+nltk.data.path.append(nltk_data_path)
 
 ps = PorterStemmer()
 
