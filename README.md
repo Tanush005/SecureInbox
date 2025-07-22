@@ -1,4 +1,4 @@
-# 🚨 SpamShield AI – Real-Time Spam Detection in <10ms
+# 🚨 SpamShield AI – Real-Time Spam Detection in <20ms
 
 **SpamShield AI** is a production-grade, ultra-fast spam detection system for SMS and email messages. Built with a focus on *performance*, *scalability*, and *software engineering best practices*, this application delivers **real-time predictions in under 10 milliseconds** and is fully deployable on the cloud.
 
@@ -95,6 +95,7 @@ Pickle for model serialization
 
 ---
 ✨ Future Enhancements
+
 🌐 Add support for multilingual spam detection
 
 📬 Integrate with email APIs like Gmail for real-time inbox filtering
