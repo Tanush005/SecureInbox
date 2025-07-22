@@ -67,20 +67,21 @@ Cached model/vectorizer, lightweight footprint, and instant readiness on Streaml
 ---
 
 
+🚀 Engineering Highlights
+🔧 System Design
+Modular architecture with clear separation between preprocessing, inference, and frontend logic.
 
-##🛡️ Fault Tolerance
-Every input is validated and handled to avoid crashes and edge-case failures.
----
+🛡️ Fault Tolerance
+All inputs are sanitized, validated, and handled gracefully to prevent crashes and edge-case failures.
 
-##⚡ Performance Optimizations
-Preloaded the model and vectorizer into memory, minimized I/O, and applied batch processing where needed.
----
-##🧰 Lightweight Deployment
-No runtime downloads (e.g., nltk.download()); no heavy libraries — optimized for minimal startup time.
----
+⚡ Performance Optimizations
+Model and vectorizer are preloaded in memory, reducing I/O time. Minimal dependencies and optimized TF-IDF logic ensure sub-10ms latency.
 
-📎 Links
-💻 GitHub Repo: https://github.com/Tanush005/SpamShield-AI
+🧰 Lightweight Deployment
+No nltk.download() or heavy runtime loads. Built to boot instantly on Streamlit Cloud and portable enough for Docker-based deployment.
+
+
+
 ---
 
 🛠️ Built With
@@ -91,10 +92,13 @@ scikit-learn
 NLTK (pre-downloaded assets, no runtime load)
 Regex + TF-IDF
 Pickle for model serialization
+
 ---
 ✨ Future Enhancements
+🌐 Add support for multilingual spam detection
 
- Add support for multilingual spam detection
-Integrate with email APIs (e.g., Gmail API)
-Dockerize for portable deployment
-Add continuous monitoring and logging with Prometheus
+📬 Integrate with email APIs like Gmail for real-time inbox filtering
+
+🐳 Dockerize for portable container deployment
+
+📊 Add monitoring/logging with Prometheus and Grafana for real-time metrics
