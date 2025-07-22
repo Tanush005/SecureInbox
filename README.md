@@ -66,13 +66,16 @@ Cached model/vectorizer, lightweight footprint, and instant readiness on Streaml
 
 ---
 
-## 🛠️ Run Locally
+## 🚀 Local Setup
 
 ```bash
 git clone https://github.com/Tanush005/SecureInbox.git
 cd SecureInbox
 pip install -r requirements.txt
 streamlit run spam_filter.py
+
+---
+
 📦 File Structure
 bash
 Copy
@@ -86,16 +89,16 @@ SecureInbox/
 ├── utils.py               # Latency timer, prediction logic
 ├── requirements.txt       # Python dependencies
 🚀 Engineering Highlights
-🔧 System Design:
+🔧 System Design
 Engineered a modular architecture separating preprocessing, inference, and UI logic.
 
-🛡️ Fault Tolerance:
+🛡️ Fault Tolerance
 Every input is validated and handled to avoid crashes and edge-case failures.
 
-⚡ Performance Optimizations:
+⚡ Performance Optimizations
 Preloading the model and vectorizer in memory, using minimal I/O, and batch processing where needed.
 
-🧰 Lightweight Deployment:
+🧰 Lightweight Deployment
 No runtime dependencies like nltk.download, no heavy libraries — optimized for minimal startup time.
 
 📎 Links
