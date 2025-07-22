@@ -66,16 +66,6 @@ Cached model/vectorizer, lightweight footprint, and instant readiness on Streaml
 
 ---
 
-## 🚀 Local Setup
-
-```bash
-git clone https://github.com/Tanush005/SecureInbox.git
-cd SecureInbox
-pip install -r requirements.txt
-streamlit run spam_filter.py
-
----
-
 📦 File Structure
 bash
 Copy
@@ -96,16 +86,17 @@ Engineered a modular architecture separating preprocessing, inference, and UI lo
 Every input is validated and handled to avoid crashes and edge-case failures.
 
 ⚡ Performance Optimizations
-Preloading the model and vectorizer in memory, using minimal I/O, and batch processing where needed.
+Preloaded the model and vectorizer into memory, minimized I/O, and applied batch processing where needed.
 
 🧰 Lightweight Deployment
-No runtime dependencies like nltk.download, no heavy libraries — optimized for minimal startup time.
+No runtime downloads (e.g., nltk.download()); no heavy libraries — optimized for minimal startup time.
 
 📎 Links
 🔗 Live App: https://secureinbox.streamlit.app
+
 💻 GitHub Repo: https://github.com/Tanush005/SecureInbox
 
-📌 Built With
+🛠️ Built With
 Python 3.9+
 
 Streamlit
@@ -121,8 +112,8 @@ Pickle for model serialization
 ✨ Future Enhancements
  Add support for multilingual spam detection
 
- Integration with email APIs (e.g., Gmail API)
+ Integrate with email APIs (e.g., Gmail API)
 
  Dockerize for portable deployment
 
- Add continuous monitoring + logging with Prometheus
+ Add continuous monitoring and logging with Prometheus
